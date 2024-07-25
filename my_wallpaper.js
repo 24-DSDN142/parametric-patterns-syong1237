@@ -20,18 +20,27 @@ function wallpaper_background() {
   post_random_Y = random(0,-110);
 }
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+  citrus(55, 145)
+  
+ 
+}
+
+
+function citrus(x, y) {
+
   push();
  
   fill(50,205,50);
-  arc(55, 145, 100, 100, 45, 220,CHORD);
+
+  arc(x, y, 100, 100, 45, 220,CHORD);
   fill(144,238,144);
+
   arc(54.9, 145.1, 85, 85, 45, 220,CHORD);
   line(13,145,53,147);
   line(26,175,53,147);
   line(55,187,53,146);
+
   fill(255,255,255);
-  arc (54,146.5,pit_size,pit_size,45,220,CHORD);
+  arc(54,146.5,pit_size,pit_size,45,220,CHORD);
   pop();
-  
- 
 }
