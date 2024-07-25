@@ -30,14 +30,51 @@ function wallpaper_background() {
   
 }
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  citrus(lime_skin, lime_flesh)
   
- 
+  citrus(lime_skin, lime_flesh) //bottom left
+  
+  push()//Top left
+  rotate(93)
+  translate(-4,-202)
+  citrus(orange_skin,orange_flesh)
+  pop()
+  
+  push()//Top right
+  rotate(181)
+  translate(-202,-196)
+  citrus(lime_skin, lime_flesh)
+  pop()
+
+  push()//Bottom right
+  rotate(274)
+  translate(-190,10)
+  citrus(orange_skin,orange_flesh)
+  pop()
+
+  push()//Middle Left
+  translate(170.1,-37.8)
+  rotate(48)
+  citrus(lemon_skin,lemon_flesh)
+  pop()
+
+  push()//Middle right
+  translate(28,238)
+  rotate(228)
+  citrus(lemon_skin,lemon_flesh)
+  pop()
+
+
+
+
+
+
+
+
 }
 
 
 function citrus(skin, flesh) {
- 
+  stroke('#000000')
   fill(skin);
   arc(55, 145, 100, 100, 45, 220,CHORD);//Skin
 
