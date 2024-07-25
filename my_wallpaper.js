@@ -1,7 +1,17 @@
 //your parameter variables go here!
-let post_random_X;
-let post_random_Y;
-let pit_size = 10;
+let pith_size = 10;
+let pith_white = '#ffffff'
+let pith_black = '#000000'
+
+let lime_skin = '#32CD32'
+let lime_flesh = '#90EE90'
+
+let lemon_skin = '#fff44f'
+let lemon_flesh = '#fffed3'
+
+let orange_skin = '#F28C28'
+let orange_flesh = '#FFAC1C'
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -15,32 +25,40 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
-  post_random_X = random(0,110);
-  post_random_Y = random(0,-110);
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
 }
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  citrus(55, 145)
+  citrus(lime_skin, lime_flesh)
   
  
 }
 
 
-function citrus(x, y) {
-
-  push();
+function citrus(skin, flesh) {
  
-  fill(50,205,50);
+  fill(skin);
+  arc(55, 145, 100, 100, 45, 220,CHORD);//Skin
 
-  arc(x, y, 100, 100, 45, 220,CHORD);
-  fill(144,238,144);
+  fill(flesh);
+  arc(54.9, 145.1, 85, 85, 45, 220,CHORD);//Flesh
 
-  arc(54.9, 145.1, 85, 85, 45, 220,CHORD);
-  line(13,145,53,147);
+ 
+  stroke(pith_white) //Pith Lines
+
+  if(flesh==lemon_flesh) //Pith
+  {stroke(pith_black)}; 
+  line(14,145,53,147);
   line(26,175,53,147);
-  line(55,187,53,146);
+  line(55,186,53,146);
+
+ if(stroke==pith_white) //Pith
+  {stroke(pith_black)};
+
 
   fill(255,255,255);
-  arc(54,146.5,pit_size,pit_size,45,220,CHORD);
-  pop();
+  arc(54,146.1,pith_size,pith_size,45,220,CHORD);
+  
+ 
 }
