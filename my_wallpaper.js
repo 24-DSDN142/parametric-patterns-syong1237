@@ -13,10 +13,18 @@ let orange_skin = '#F28C28'
 let orange_flesh = '#FFAC1C'
 
 
+//For Copy/Paste
+
+//  orange_skin,orange_flesh
+
+//  lime_skin, lime_flesh
+
+//  lemon_skin,lemon_flesh
+
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
