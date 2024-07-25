@@ -21,7 +21,6 @@ function wallpaper_background() {
 }
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   push();
-  rotate();
  
   fill(50,205,50);
   arc(55, 145, 100, 100, 45, 220,CHORD);
