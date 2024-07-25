@@ -1,7 +1,7 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-
+let post_random_X;
+let post_random_Y;
+let pit_size = 10;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -16,8 +16,23 @@ function setup_wallpaper(pWallpaper) {
 
 function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
+  post_random_X = random(0,110);
+  post_random_Y = random(0,-110);
 }
-
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+  push();
+  rotate();
+ 
+  fill(50,205,50);
+  arc(55, 145, 100, 100, 45, 220,CHORD);
+  fill(144,238,144);
+  arc(54.9, 145.1, 85, 85, 45, 220,CHORD);
+  line(13,145,53,147);
+  line(26,175,53,147);
+  line(55,187,53,146);
+  fill(255,255,255);
+  arc (54,146.5,pit_size,pit_size,45,220,CHORD);
+  pop();
+  
+ 
 }
