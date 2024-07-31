@@ -1,16 +1,19 @@
 //your parameter variables go here!
 let pith_size = 10;
-let pith_white = '#ffffff'
-let pith_black = '#000000'
 
-let lime_skin = '#32CD32'
-let lime_flesh = '#90EE90'
+let pith_white = '#ffffff';
+let pith_black = '#000000';
 
-let lemon_skin = '#fff44f'
-let lemon_flesh = '#fffed3'
+let seed_size = 5 ;
 
-let orange_skin = '#F28C28'
-let orange_flesh = '#FFAC1C'
+let lime_skin = '#32CD32';
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f';
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28';
+let orange_flesh = '#FFAC1C';
 
 
 //For Copy/Paste
@@ -22,7 +25,7 @@ let orange_flesh = '#FFAC1C'
 //  lemon_skin,lemon_flesh
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -50,7 +53,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   push()//Top right
   rotate(181)
   translate(-202,-196)
-  citrus(lime_skin, lime_flesh)
+  citrus(lime_skin,lime_flesh)
   pop()
 
   push()//Bottom right
@@ -105,5 +108,8 @@ function citrus(skin, flesh) {
   fill(255,255,255);
   arc(54,146.1,pith_size,pith_size,45,220,CHORD);
   
- 
+
+ ellipse(38,140,seed_size/2,seed_size)
+ ellipse(61,161,seed_size,seed_size/2)
+
 }
