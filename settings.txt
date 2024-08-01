@@ -10,45 +10,514 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+
+let pith_size = 0; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 0 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(orange_skin,orange_flesh) //Top Left
+
+// line 68: citrus(lime_skin,lime_flesh)  //Top Right
+
+// line 73: citrus(lime_skin,lime_flesh) //Bottom Left
+
+// line 79: citrus(orange_skin,orange_flesh) //Bottom Right
+
+// line 85: citrus(lemon_skin,lemon_flesh) //Middle Left
+
+// line 91: citrus(lemon_skin,lemon_flesh) //Middle Right
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
 }
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
 
 /////////////////////////////////
 
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(orange_skin,orange_flesh) //Top Left
+
+// line 68: citrus(orange_skin,orange_flesh)  //Top Right
+
+// line 73: citrus(orange_skin,orange_flesh) //Bottom Left
+
+// line 79: citrus(orange_skin,orange_flesh) //Bottom Right
+
+// line 85: citrus(orange_skin,orange_flesh) //Middle Left
+
+// line 91: citrus(orange_skin,orange_flesh) //Middle Right
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(lime_skin, lime_flesh) //Top Left
+
+// line 68: citrus(lime_skin, lime_flesh)  //Top Right
+
+// line 73: citrus(lime_skin, lime_flesh) //Bottom Left
+
+// line 79: citrus(lime_skin, lime_flesh) //Bottom Right
+
+// line 85: citrus(lime_skin, lime_flesh) //Middle Left
+
+// line 91: citrus(lime_skin, lime_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(lemon_skin,lemon_flesh) //Top Left
+
+// line 68: citrus(lemon_skin,lemon_flesh)  //Top Right
+
+// line 73: citrus(lemon_skin,lemon_flesh) //Bottom Left
+
+// line 79: citrus(lemon_skin,lemon_flesh) //Bottom Right
+
+// line 85: citrus(lemon_skin,lemon_flesh) //Middle Left
+
+// line 91: citrus(lemon_skin,lemon_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(orange_skin,orange_flesh) //Top Left
+
+// line 68: citrus(orange_skin,orange_flesh)  //Top Right
+
+// line 73: citrus(orange_skin,orange_flesh) //Bottom Left
+
+// line 79: citrus(orange_skin,orange_flesh) //Bottom Right
+
+// line 85: citrus(lemon_skin,lemon_flesh) //Middle Left
+
+// line 91: citrus(lemon_skin,lemon_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 6:
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(lemon_skin,lemon_flesh) //Top Left
+
+// line 68: citrus(lemon_skin,lemon_flesh)  //Top Right
+
+// line 73: citrus(lemon_skin,lemon_flesh) //Bottom Left
+
+// line 79: citrus(lemon_skin,lemon_flesh) //Bottom Right
+
+// line 85: citrus(orange_skin,orange_flesh) //Middle Left
+
+// line 91: citrus(orange_skin,orange_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
+
+/////////////////////////////////
+
+Wallpaper 7:
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 0 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(lemon_skin,lemon_flesh) //Top Left
+
+// line 68: citrus(lime_skin, lime_flesh)  //Top Right
+
+// line 73: citrus(lime_skin, lime_flesh) //Bottom Left
+
+// line 79: citrus(lemon_skin,lemon_flesh) //Bottom Right
+
+// line 85: citrus(orange_skin,orange_flesh) //Middle Left
+
+// line 91: citrus(orange_skin,orange_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
+
+/////////////////////////////////
+
+Wallpaper 8:
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(orange_skin,orange_flesh) //Top Left
+
+// line 68: citrus(lemon_skin,lemon_flesh)  //Top Right
+
+// line 73: citrus(lemon_skin,lemon_flesh) //Bottom Left
+
+// line 79: citrus(orange_skin,orange_flesh) //Bottom Right
+
+// line 85: citrus(lime_skin, lime_flesh) //Middle Left
+
+// line 91: citrus(lime_skin, lime_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 9:
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(lemon_skin,orange_flesh) //Top Left
+
+// line 68: citrus(lemon_skin,lime_flesh)  //Top Right
+
+// line 73: citrus(lemon_skin,lime_flesh) //Bottom Left
+
+// line 79: citrus(lemon_skin,orange_flesh) //Bottom Right
+
+// line 85: citrus(lime_skin, lemon_flesh) //Middle Left
+
+// line 91: citrus(lime_skin, lemon_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
+}
+/////////////////////////////////
+
+Favourite Wallpaper :
+//your parameter variables go here!
+
+let pith_size = 10; //changes the size of the pith core 
+
+let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
+let pith_black = '#000000';
+
+let seed_size = 6 ; //Changes the size of seeds
+
+let lime_skin = '#32CD32'; // Lime Colour scheme
+let lime_flesh = '#90EE90';
+
+let lemon_skin = '#fff44f'; // Lemon Colour Scheme
+let lemon_flesh = '#fffed3';
+
+let orange_skin = '#F28C28'; //Orange Colour Scheme
+let orange_flesh = '#FFAC1C';
+
+// line 62: citrus(orange_skin,orange_flesh) //Top Left
+
+// line 68: citrus(lemon_skin,lemon_flesh)  //Top Right
+
+// line 73: citrus(lemon_skin,lemon_flesh) //Bottom Left
+
+// line 79: citrus(orange_skin,orange_flesh) //Bottom Right
+
+// line 85: citrus(lime_skin, lime_flesh) //Middle Left
+
+// line 91: citrus(lime_skin, lime_flesh) //Middle Right
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 56;
+}
+
+function wallpaper_background() {
+  //background(240, 255, 240); //light honeydew green colour
+  background('#ffb7c5')
+  
 }
