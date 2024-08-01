@@ -5,7 +5,7 @@ let pith_size = 10; //changes the size of the pith core
 let pith_white = '#ffffff'; //Changes the colour of the pith lines,changes automatically via if statment
 let pith_black = '#000000';
 
-let seed_size = 5 ; //Changes the size of seeds
+let seed_size = 6 ; //Changes the size of seeds
 
 let lime_skin = '#32CD32'; // Lime Colour scheme
 let lime_flesh = '#90EE90';
@@ -16,25 +16,17 @@ let lemon_flesh = '#fffed3';
 let orange_skin = '#F28C28'; //Orange Colour Scheme
 let orange_flesh = '#FFAC1C';
 
-// line 61: citrus(orange_skin,orange_flesh) //Top Left
+// line 62: citrus(lemon_skin,orange_flesh) //Top Left
 
-// line 67: citrus(lime_skin,lime_flesh)  //Top Right
+// line 68: citrus(lemon_skin,lime_flesh)  //Top Right
 
-// line 72: citrus(lime_skin,lime_flesh) //Bottom Left
+// line 73: citrus(lemon_skin,lime_flesh) //Bottom Left
 
-// line 78: citrus(orange_skin,orange_flesh) //Bottom Right
+// line 79: citrus(lemon_skin,orange_flesh) //Bottom Right
 
-// line 84: citrus(lemon_skin,lemon_flesh) //Middle Left
+// line 85: citrus(lime_skin, lemon_flesh) //Middle Left
 
-// line 90: citrus(lemon_skin,lemon_flesh) //Middle Right
-
-//For Copy/Paste
-
-//  orange_skin,orange_flesh
-
-//  lime_skin, lime_flesh
-
-//  lemon_skin,lemon_flesh
+// line 91: citrus(lime_skin, lemon_flesh) //Middle Right
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -44,7 +36,7 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 56;
 }
 
 function wallpaper_background() {
@@ -52,42 +44,51 @@ function wallpaper_background() {
   background('#ffb7c5')
   
 }
+
+//For Copy/Paste
+
+//  orange_skin,orange_flesh
+
+//  lime_skin, lime_flesh
+
+//  lemon_skin,lemon_flesh
+
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
   
   push()//Top left
   rotate(93)
   translate(-4,-202)
-  citrus(orange_skin,orange_flesh)
+  citrus(lemon_skin,orange_flesh)
   pop()
   
   push()//Top right
   rotate(181)
   translate(-202,-196)
-  citrus(lime_skin, lime_flesh)
+  citrus(lemon_skin,lime_flesh)
   pop()
 
 
   //Bottom left
-  citrus(lime_skin, lime_flesh)
+  citrus(lemon_skin,lime_flesh)
 
 
   push()//Bottom right
   rotate(274)
   translate(-190,10)
-  citrus(orange_skin,orange_flesh)
+  citrus(lemon_skin,orange_flesh)
   pop()
 
   push()//Middle Left
   translate(170.1,-37.8)
   rotate(48)
-  citrus(lemon_skin,lemon_flesh)
+  citrus(lime_skin,lemon_flesh)
   pop()
 
   push()//Middle right
   translate(28,238)
   rotate(228)
-  citrus(lemon_skin,lemon_flesh)
+  citrus(lime_skin,lemon_flesh)
   pop()
 
 
